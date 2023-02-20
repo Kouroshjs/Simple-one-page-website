@@ -550,31 +550,46 @@ template {
     border-radius: 1rem;
 }
 
-.footer{
-
+.footer > div {
+    background-color: #0050C8;
+    margin-top: 10rem;
 }
 
-.newsletter{
-    background-color: #2F5BEA;
+.content h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-family: "TTNorms";
 }
 
-.newsletter__text{
-
+.container .content {
+    display: flex;
+    align-content: center;
+    padding: 5rem 0;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
 }
 
-.newsletter__email{
-
+.container input {
+    height: 3rem;
+    width: 15rem;
+    border: none;
+    border-radius: 3px;
+    padding-left: 1.5rem;
+    margin-left: 3rem;
+    outline: none;
 }
 
-.newsletter__txt{
-
+.container button {
+    height: 2.7rem;
+    width: 3rem;
+    background-color: #0050C8;
+    position: absolute;
+    right: 4.5rem;
+    top: 6rem;
+    border-radius: 3px;
+    border: none;
 }
-
-.newsletter__btn{
-
-}
-
-
 /* Project Responsive */
 
 @media only screen and (max-width: 1200px) {
