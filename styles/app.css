@@ -258,6 +258,10 @@ template {
 
 }
 
+.fa-bars {
+    display: none;
+    font-size: 1.5rem;
+}
 .item__menu:hover {
     scale: 1.2;
     color: rgb(66, 66, 221);
@@ -434,7 +438,6 @@ template {
 .submain{
     
     width: 100%;
-    max-height: 57.5rem;
     background-color: #2F5BEA;
     margin-top: 4rem;
 
@@ -507,8 +510,6 @@ template {
     display: flex;
     justify-content: space-between;
     padding-bottom: 4rem;
-
-
 }
 
 .portfolio{
@@ -570,7 +571,7 @@ template {
     align-items: center;
 }
 
-.container input {
+.news-letter input {
     height: 3rem;
     width: 15rem;
     border: none;
@@ -580,7 +581,7 @@ template {
     outline: none;
 }
 
-.container button {
+.news-letter button {
     height: 2.7rem;
     width: 3rem;
     background-color: #0050C8;
@@ -598,16 +599,296 @@ template {
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1000px) {
+    .ul__menu {
+        display: none;
+    }
+    
+    .fa-bars {
+        display: block;
+    }
+    
     .container {
         max-width: 720px;
     }
+
+    .btn__header{
+        display: none;
+    }
+
+    .header-buttom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-buttom__left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 8rem;
+    }
+    
+    .left-h1 , .left-text {
+        text-align: center;
+    }
+
+    .mid-center{
+        display: flex;
+        flex-direction: column;
+        justify-content: ;
+        padding-top: 2rem;
+    }
+    
+    .mid-center-left{
+        width: 100%;
+    }
+    .mid-center-left-title{
+        color: #081D43;
+        font-family: 'TTNorms';
+        font-size: 2rem;
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    .mid-center-left-text{
+        color: #6C7890;
+        font-family: 'TTNorms';
+        font-size: 1.5rem;
+        text-align: left;
+        padding-bottom: 3rem;
+    }
+    
+    
+    .mid-center-center{
+        width: 100%;
+    }
+    
+    .mid-center-center-title{
+        color: #081D43;
+        font-family: 'TTNorms';
+        font-size: 2rem;
+        text-align: left;
+        font-weight: bold;
+
+
+    }
+    
+    .mid-center-center-text{
+        color: #6C7890;
+        font-family: 'TTNorms';
+        font-size: 1.5rem;
+        text-align: left;
+        padding-bottom: 3rem;
+
+    }
+    
+    
+    .mid-center-right{
+        width: 100%;
+    }
+    
+    .mid-center-right-title{
+        color: #081D43;
+        font-family: 'TTNorms';
+        font-size: 2rem;
+        text-align: left;
+        font-weight: bold;
+
+    }
+    
+    .mid-center-right-text{
+        color: #6C7890;
+        font-family: 'TTNorms';
+        font-size: 1.51rem;
+        text-align: left;
+        padding-bottom: 3rem;
+
+    }
+
+    .mid-buttom{
+        scale: 0.7;
+    }
+    
+    .submain__top{
+        text-align: center;
+        padding: 2.2rem 0;
+    }
+    
+    .submain__top-header{
+        font-family: 'TTNorms';
+        color: white;
+        font-size: 2rem;
+    }
+    
+    .submain__top-text{
+        font-family: 'TTNorms';
+        line-height: 2rem;
+        color: white;
+        font-weight: 100;
+    }
+    
+    .submain__mid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 8rem;
+        gap: 3rem;
+    }
+    
+    .submain__mid-box{
+        width: 80%;
+        background-color: white;
+        padding: 0.8rem;
+        border-radius: 0.3rem;
+        font-family: 'TTNorms';
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+    }
+    
+    .submain__mid-box__text{
+        color: #7E8085;
+        line-height: 1.8;
+        font-size: 1.1rem;
+    }
+    
+    .comment-info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-top: 1px solid #E8EBEF;
+        padding-top: 1rem;
+        padding-left: 0.5rem;
+    }
+    
+    .comment-info__img{
+        width: 3rem;
+        height: 3rem;
+        padding-right: 1rem;
+        
+    }
+    
+    .comment-info__text {
+        font-family: 'TTNorms';
+        font-size: 1.2rem;
+        border-top: #7E8085;
+        color: #606060;
+    }
+    
+    
+    .submain__buttom{   
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        justify-items: center;
+        gap: 2rem;
+    }
+    .portfolio{
+
+    }
+    .portofio__head{
+        text-align: center;
+        padding: 2rem ;
+    }
+    
+    .portfolip__header-text{
+        color: #6C7890;
+        font-size: smaller;
+        font-family: "TTNorms";
+    }
+    
+    .portfolio__subject{
+        font-family: "TTNorms";
+        font-weight: 300;
+    }
+    
+    .portfolio-cotainer{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .portfolio__row-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 2.5rem;
+        gap: 2rem;
+    }
+    
+    .portfolio__row-2{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+    
+    .portfolio__img{
+        border-radius: 1rem;
+    }
+    
+    .footer > div {
+        background-color: #0050C8;
+        margin-top: 10rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .content h3 {
+        color: white;
+        font-size: 1.5rem;
+        font-family: "TTNorms";
+        text-align: center;
+        padding-bottom: 4rem;
+    }
+
+    .news-letter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .news-letter input {
+        height: 3rem;
+        width: 15rem;
+        border: none;
+        border-radius: 3px;
+        outline: none;
+        margin-left: 0;
+    }
+    
+    .news-letter button {
+        height: 2.7rem;
+        width: 11rem;
+        background-color:#0050C8;
+        border-radius: 3px;
+        border: solid 1px white;
+        position: relative;
+        top:0;
+        right: 0;
+        margin-top: 2rem;
+        
+    }
+
+
+    /* Project Responsive */
+    
+  
 }
 
 @media only screen and (max-width: 768px) {
     .container {
         max-width: 540px;
     }
+    
 }
 
 @media only screen and (max-width: 576px) {
